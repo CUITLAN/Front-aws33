@@ -2,6 +2,7 @@ import React from 'react'
 import AddContact from './components/AddContact.Component'
 import { Container, Box } from '@mui/material'
 import Search from './components/SearchContact.Component'
+import GetAllContact from './components/getAllContacts.component'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Search />
         </Box>
       </Box>
+      <GetAllContact/>
     </Container>
   )
 }
