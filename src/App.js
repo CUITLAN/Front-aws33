@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import AddContact from './components/AddContact.Component'
+import { Container, Box } from '@mui/material'
+import Search from './components/SearchContact.Component'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container fixed maxWidth="sm">
+      <h2>Bienvenido</h2>
+
+      <Box display="flex" alignItems="center">
+        <AddContact />
+        <Box flexGrow={1} ml={2}>
+          <Search />
+        </Box>
+      </Box>
+    </Container>
+  )
 }
 
-export default App;
+export default App
